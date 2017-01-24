@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DB7A9161E37451500546900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A9151E37451500546900 /* main.m */; };
+		6DB7A9191E37451500546900 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A9181E37451500546900 /* AppDelegate.m */; };
+		6DB7A91C1E37451500546900 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A91B1E37451500546900 /* ViewController.m */; };
+		6DB7A91F1E37451500546900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7A91D1E37451500546900 /* Main.storyboard */; };
+		6DB7A9211E37451500546900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7A9201E37451500546900 /* Assets.xcassets */; };
+		6DB7A9241E37451500546900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7A9221E37451500546900 /* LaunchScreen.storyboard */; };
+		6DB7A92F1E37451500546900 /* SNSLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A92E1E37451500546900 /* SNSLoginTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DB7A92B1E37451500546900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB7A9091E37451500546900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB7A9101E37451500546900;
+			remoteInfo = SNSLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DB7A9111E37451500546900 /* SNSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB7A9151E37451500546900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DB7A9171E37451500546900 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DB7A9181E37451500546900 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DB7A91A1E37451500546900 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DB7A91B1E37451500546900 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DB7A91E1E37451500546900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DB7A9201E37451500546900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DB7A9231E37451500546900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DB7A9251E37451500546900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB7A92A1E37451500546900 /* SNSLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB7A92E1E37451500546900 /* SNSLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSLoginTests.m; sourceTree = "<group>"; };
+		6DB7A9301E37451500546900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DB7A90E1E37451500546900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB7A9271E37451500546900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DB7A9081E37451500546900 = {
+			isa = PBXGroup;
+			children = (
+				6DB7A9131E37451500546900 /* SNSLogin */,
+				6DB7A92D1E37451500546900 /* SNSLoginTests */,
+				6DB7A9121E37451500546900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DB7A9121E37451500546900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7A9111E37451500546900 /* SNSLogin.app */,
+				6DB7A92A1E37451500546900 /* SNSLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DB7A9131E37451500546900 /* SNSLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7A9171E37451500546900 /* AppDelegate.h */,
+				6DB7A9181E37451500546900 /* AppDelegate.m */,
+				6DB7A91A1E37451500546900 /* ViewController.h */,
+				6DB7A91B1E37451500546900 /* ViewController.m */,
+				6DB7A91D1E37451500546900 /* Main.storyboard */,
+				6DB7A9201E37451500546900 /* Assets.xcassets */,
+				6DB7A9221E37451500546900 /* LaunchScreen.storyboard */,
+				6DB7A9251E37451500546900 /* Info.plist */,
+				6DB7A9141E37451500546900 /* Supporting Files */,
+			);
+			path = SNSLogin;
+			sourceTree = "<group>";
+		};
+		6DB7A9141E37451500546900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7A9151E37451500546900 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DB7A92D1E37451500546900 /* SNSLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7A92E1E37451500546900 /* SNSLoginTests.m */,
+				6DB7A9301E37451500546900 /* Info.plist */,
+			);
+			path = SNSLoginTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DB7A9101E37451500546900 /* SNSLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB7A9331E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLogin" */;
+			buildPhases = (
+				6DB7A90D1E37451500546900 /* Sources */,
+				6DB7A90E1E37451500546900 /* Frameworks */,
+				6DB7A90F1E37451500546900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSLogin;
+			productName = SNSLogin;
+			productReference = 6DB7A9111E37451500546900 /* SNSLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DB7A9291E37451500546900 /* SNSLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB7A9361E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLoginTests" */;
+			buildPhases = (
+				6DB7A9261E37451500546900 /* Sources */,
+				6DB7A9271E37451500546900 /* Frameworks */,
+				6DB7A9281E37451500546900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DB7A92C1E37451500546900 /* PBXTargetDependency */,
+			);
+			name = SNSLoginTests;
+			productName = SNSLoginTests;
+			productReference = 6DB7A92A1E37451500546900 /* SNSLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB7A9091E37451500546900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "김민아";
+				TargetAttributes = {
+					6DB7A9101E37451500546900 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					6DB7A9291E37451500546900 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DB7A9101E37451500546900;
+					};
+				};
+			};
+			buildConfigurationList = 6DB7A90C1E37451500546900 /* Build configuration list for PBXProject "SNSLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DB7A9081E37451500546900;
+			productRefGroup = 6DB7A9121E37451500546900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DB7A9101E37451500546900 /* SNSLogin */,
+				6DB7A9291E37451500546900 /* SNSLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DB7A90F1E37451500546900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB7A9241E37451500546900 /* LaunchScreen.storyboard in Resources */,
+				6DB7A9211E37451500546900 /* Assets.xcassets in Resources */,
+				6DB7A91F1E37451500546900 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB7A9281E37451500546900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DB7A90D1E37451500546900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB7A91C1E37451500546900 /* ViewController.m in Sources */,
+				6DB7A9191E37451500546900 /* AppDelegate.m in Sources */,
+				6DB7A9161E37451500546900 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB7A9261E37451500546900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB7A92F1E37451500546900 /* SNSLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DB7A92C1E37451500546900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB7A9101E37451500546900 /* SNSLogin */;
+			targetProxy = 6DB7A92B1E37451500546900 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DB7A91D1E37451500546900 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB7A91E1E37451500546900 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DB7A9221E37451500546900 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB7A9231E37451500546900 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DB7A9311E37451500546900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DB7A9321E37451500546900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DB7A9341E37451500546900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SNSLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SNSLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DB7A9351E37451500546900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SNSLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SNSLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DB7A9371E37451500546900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SNSLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SNSLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNSLogin.app/SNSLogin";
+			};
+			name = Debug;
+		};
+		6DB7A9381E37451500546900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SNSLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SNSLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNSLogin.app/SNSLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DB7A90C1E37451500546900 /* Build configuration list for PBXProject "SNSLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB7A9311E37451500546900 /* Debug */,
+				6DB7A9321E37451500546900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB7A9331E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB7A9341E37451500546900 /* Debug */,
+				6DB7A9351E37451500546900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DB7A9361E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB7A9371E37451500546900 /* Debug */,
+				6DB7A9381E37451500546900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB7A9091E37451500546900 /* Project object */;
+}
