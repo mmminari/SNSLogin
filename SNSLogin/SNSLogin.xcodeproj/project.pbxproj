@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D58A6B01E384682009E2389 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D58A6AF1E384682009E2389 /* UserProfileViewController.m */; };
 		6DB7A9161E37451500546900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A9151E37451500546900 /* main.m */; };
 		6DB7A9191E37451500546900 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A9181E37451500546900 /* AppDelegate.m */; };
 		6DB7A91C1E37451500546900 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A91B1E37451500546900 /* ViewController.m */; };
@@ -14,6 +15,14 @@
 		6DB7A9211E37451500546900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7A9201E37451500546900 /* Assets.xcassets */; };
 		6DB7A9241E37451500546900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7A9221E37451500546900 /* LaunchScreen.storyboard */; };
 		6DB7A92F1E37451500546900 /* SNSLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A92E1E37451500546900 /* SNSLoginTests.m */; };
+		6DB7A9411E3751BA00546900 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93A1E3751BA00546900 /* AccountKit.framework */; };
+		6DB7A9421E3751BA00546900 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93B1E3751BA00546900 /* FBAudienceNetwork.framework */; };
+		6DB7A9431E3751BA00546900 /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93C1E3751BA00546900 /* FBNotifications.framework */; };
+		6DB7A9441E3751BA00546900 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93D1E3751BA00546900 /* FBSDKCoreKit.framework */; };
+		6DB7A9451E3751BA00546900 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93E1E3751BA00546900 /* FBSDKLoginKit.framework */; };
+		6DB7A9461E3751BA00546900 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93F1E3751BA00546900 /* FBSDKMessengerShareKit.framework */; };
+		6DB7A9471E3751BA00546900 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A9401E3751BA00546900 /* FBSDKShareKit.framework */; };
+		6DB7A9491E3751F100546900 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A9481E3751F100546900 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D58A6AE1E384682009E2389 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		6D58A6AF1E384682009E2389 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
 		6DB7A9111E37451500546900 /* SNSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB7A9151E37451500546900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DB7A9171E37451500546900 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +51,14 @@
 		6DB7A92A1E37451500546900 /* SNSLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB7A92E1E37451500546900 /* SNSLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSLoginTests.m; sourceTree = "<group>"; };
 		6DB7A9301E37451500546900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB7A93A1E3751BA00546900 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = SNSLogin/AccountKit.framework; sourceTree = "<group>"; };
+		6DB7A93B1E3751BA00546900 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = SNSLogin/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		6DB7A93C1E3751BA00546900 /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBNotifications.framework; path = SNSLogin/FBNotifications.framework; sourceTree = "<group>"; };
+		6DB7A93D1E3751BA00546900 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = SNSLogin/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6DB7A93E1E3751BA00546900 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = SNSLogin/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6DB7A93F1E3751BA00546900 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = SNSLogin/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		6DB7A9401E3751BA00546900 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = SNSLogin/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6DB7A9481E3751F100546900 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = SNSLogin/Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB7A9491E3751F100546900 /* Bolts.framework in Frameworks */,
+				6DB7A9411E3751BA00546900 /* AccountKit.framework in Frameworks */,
+				6DB7A9421E3751BA00546900 /* FBAudienceNetwork.framework in Frameworks */,
+				6DB7A9431E3751BA00546900 /* FBNotifications.framework in Frameworks */,
+				6DB7A9441E3751BA00546900 /* FBSDKCoreKit.framework in Frameworks */,
+				6DB7A9451E3751BA00546900 /* FBSDKLoginKit.framework in Frameworks */,
+				6DB7A9461E3751BA00546900 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				6DB7A9471E3751BA00546900 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +93,7 @@
 				6DB7A9131E37451500546900 /* SNSLogin */,
 				6DB7A92D1E37451500546900 /* SNSLoginTests */,
 				6DB7A9121E37451500546900 /* Products */,
+				6DB7A9391E3751B600546900 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +118,8 @@
 				6DB7A9221E37451500546900 /* LaunchScreen.storyboard */,
 				6DB7A9251E37451500546900 /* Info.plist */,
 				6DB7A9141E37451500546900 /* Supporting Files */,
+				6D58A6AE1E384682009E2389 /* UserProfileViewController.h */,
+				6D58A6AF1E384682009E2389 /* UserProfileViewController.m */,
 			);
 			path = SNSLogin;
 			sourceTree = "<group>";
@@ -109,6 +139,21 @@
 				6DB7A9301E37451500546900 /* Info.plist */,
 			);
 			path = SNSLoginTests;
+			sourceTree = "<group>";
+		};
+		6DB7A9391E3751B600546900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7A9481E3751F100546900 /* Bolts.framework */,
+				6DB7A93A1E3751BA00546900 /* AccountKit.framework */,
+				6DB7A93B1E3751BA00546900 /* FBAudienceNetwork.framework */,
+				6DB7A93C1E3751BA00546900 /* FBNotifications.framework */,
+				6DB7A93D1E3751BA00546900 /* FBSDKCoreKit.framework */,
+				6DB7A93E1E3751BA00546900 /* FBSDKLoginKit.framework */,
+				6DB7A93F1E3751BA00546900 /* FBSDKMessengerShareKit.framework */,
+				6DB7A9401E3751BA00546900 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +205,7 @@
 				TargetAttributes = {
 					6DB7A9101E37451500546900 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A87J69XM38;
 						ProvisioningStyle = Automatic;
 					};
 					6DB7A9291E37451500546900 = {
@@ -213,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D58A6B01E384682009E2389 /* UserProfileViewController.m in Sources */,
 				6DB7A91C1E37451500546900 /* ViewController.m in Sources */,
 				6DB7A9191E37451500546900 /* AppDelegate.m in Sources */,
 				6DB7A9161E37451500546900 /* main.m in Sources */,
@@ -349,7 +396,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SNSLogin",
+				);
 				INFOPLIST_FILE = SNSLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SNSLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,7 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SNSLogin",
+				);
 				INFOPLIST_FILE = SNSLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.SNSLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +469,7 @@
 				6DB7A9351E37451500546900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DB7A9361E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +478,7 @@
 				6DB7A9381E37451500546900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
