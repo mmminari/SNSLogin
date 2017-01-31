@@ -1,14 +1,24 @@
 PODS:
+  - Fabric (1.6.11)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - TwitterCore (2.7.0):
+    - Fabric
+  - TwitterKit (2.7.0):
+    - TwitterCore (= 2.7.0)
 
 DEPENDENCIES:
+  - Fabric
   - SDWebImage
+  - TwitterKit
 
 SPEC CHECKSUMS:
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
+  TwitterKit: 97e729ceea041d174126235bf6ff67dcf37772d4
 
-PODFILE CHECKSUM: ab2908dc89395d528c0df80d66da0a240d9c141b
+PODFILE CHECKSUM: ca1b9dfa1617eab38556e9df9818493842920e06
 
 COCOAPODS: 1.1.1

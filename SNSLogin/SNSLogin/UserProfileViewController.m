@@ -47,13 +47,17 @@
         
         NSURL *url = [profile imageURLForPictureMode:FBSDKProfilePictureModeSquare size:CGSizeMake(300, 300)];
         
-        [self setImageView:self.ivProfile urlString:[NSString stringWithFormat:@"%@",url] placeholderImage:nil animation:YES];
-        
         NSString *userName = profile.name;
         
-        self.lbUserName.text = userName;
-        
-        [self.view layoutIfNeeded];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [self setImageView:self.ivProfile urlString:[NSString stringWithFormat:@"%@",url] placeholderImage:nil animation:YES];
+            
+            self.lbUserName.text = userName;
+            
+            [self.view layoutIfNeeded];
+            
+        });
         
     }];
 }
@@ -79,15 +83,18 @@
         NSDictionary *resultData = (NSDictionary *)result;
         
         NSLog(@"UserProfile request result : %@", resultData);
-
+        
         NSLog(@"error : %@", error.description);
         
-        self.lbId.text = [resultData objectForKey:@"id"];
-        self.lbEmail.text = [resultData objectForKey:@"email"];
-        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            self.lbId.text = [resultData objectForKey:@"id"];
+            self.lbEmail.text = [resultData objectForKey:@"email"];
+            
+            [self.view layoutIfNeeded];
+        });
     }];
 }
-
 - (IBAction)touchedLogOutButton:(UIButton *)sender
 {
 
