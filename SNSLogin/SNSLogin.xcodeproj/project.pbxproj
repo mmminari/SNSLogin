@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B77A520468C4AF33D3BA61B /* Pods_SNSLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3686D904AD55B4031D49CD /* Pods_SNSLogin.framework */; };
 		6D58A6B01E384682009E2389 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D58A6AF1E384682009E2389 /* UserProfileViewController.m */; };
 		6DB7A9161E37451500546900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A9151E37451500546900 /* main.m */; };
 		6DB7A9191E37451500546900 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7A9181E37451500546900 /* AppDelegate.m */; };
@@ -23,6 +24,7 @@
 		6DB7A9461E3751BA00546900 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A93F1E3751BA00546900 /* FBSDKMessengerShareKit.framework */; };
 		6DB7A9471E3751BA00546900 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A9401E3751BA00546900 /* FBSDKShareKit.framework */; };
 		6DB7A9491E3751F100546900 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB7A9481E3751F100546900 /* Bolts.framework */; };
+		A8DC0774AC03F7635D1AFF4B /* Pods_SNSLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E4B3F38FD5D70AFDC28538 /* Pods_SNSLoginTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BF12A28ADFD5297C3D27019 /* Pods-SNSLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNSLogin/Pods-SNSLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		5B3686D904AD55B4031D49CD /* Pods_SNSLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D58A6AE1E384682009E2389 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
 		6D58A6AF1E384682009E2389 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
+		6D62F2D94299937722622DAE /* Pods-SNSLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNSLoginTests/Pods-SNSLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB7A9111E37451500546900 /* SNSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB7A9151E37451500546900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DB7A9171E37451500546900 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		6DB7A93F1E3751BA00546900 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = SNSLogin/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		6DB7A9401E3751BA00546900 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = SNSLogin/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		6DB7A9481E3751F100546900 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = SNSLogin/Bolts.framework; sourceTree = "<group>"; };
+		75E4B3F38FD5D70AFDC28538 /* Pods_SNSLoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSLoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37ABFAB627DBD68621E7720 /* Pods-SNSLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNSLogin/Pods-SNSLogin.release.xcconfig"; sourceTree = "<group>"; };
+		C51D12FCDD8B1304AB0FA838 /* Pods-SNSLoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSLoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNSLoginTests/Pods-SNSLoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 				6DB7A9451E3751BA00546900 /* FBSDKLoginKit.framework in Frameworks */,
 				6DB7A9461E3751BA00546900 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				6DB7A9471E3751BA00546900 /* FBSDKShareKit.framework in Frameworks */,
+				0B77A520468C4AF33D3BA61B /* Pods_SNSLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +90,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DC0774AC03F7635D1AFF4B /* Pods_SNSLoginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		293AA1B0397D016E7240DFBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BF12A28ADFD5297C3D27019 /* Pods-SNSLogin.debug.xcconfig */,
+				B37ABFAB627DBD68621E7720 /* Pods-SNSLogin.release.xcconfig */,
+				C51D12FCDD8B1304AB0FA838 /* Pods-SNSLoginTests.debug.xcconfig */,
+				6D62F2D94299937722622DAE /* Pods-SNSLoginTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6DB7A9081E37451500546900 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +115,7 @@
 				6DB7A92D1E37451500546900 /* SNSLoginTests */,
 				6DB7A9121E37451500546900 /* Products */,
 				6DB7A9391E3751B600546900 /* Frameworks */,
+				293AA1B0397D016E7240DFBE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +174,8 @@
 				6DB7A93E1E3751BA00546900 /* FBSDKLoginKit.framework */,
 				6DB7A93F1E3751BA00546900 /* FBSDKMessengerShareKit.framework */,
 				6DB7A9401E3751BA00546900 /* FBSDKShareKit.framework */,
+				5B3686D904AD55B4031D49CD /* Pods_SNSLogin.framework */,
+				75E4B3F38FD5D70AFDC28538 /* Pods_SNSLoginTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB7A9331E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLogin" */;
 			buildPhases = (
+				607EC1D7BF27F72D6123CAB0 /* [CP] Check Pods Manifest.lock */,
 				6DB7A90D1E37451500546900 /* Sources */,
 				6DB7A90E1E37451500546900 /* Frameworks */,
 				6DB7A90F1E37451500546900 /* Resources */,
+				1F59D4F11108211914B66DBC /* [CP] Embed Pods Frameworks */,
+				7D91B3460D3B2EA4A8963B0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB7A9361E37451500546900 /* Build configuration list for PBXNativeTarget "SNSLoginTests" */;
 			buildPhases = (
+				B4B9B90F495C7324B121F779 /* [CP] Check Pods Manifest.lock */,
 				6DB7A9261E37451500546900 /* Sources */,
 				6DB7A9271E37451500546900 /* Frameworks */,
 				6DB7A9281E37451500546900 /* Resources */,
+				298BBFD613C16619E6B3FF2E /* [CP] Embed Pods Frameworks */,
+				175DB5844F985D129F734054 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +283,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		175DB5844F985D129F734054 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNSLoginTests/Pods-SNSLoginTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F59D4F11108211914B66DBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNSLogin/Pods-SNSLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		298BBFD613C16619E6B3FF2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNSLoginTests/Pods-SNSLoginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		607EC1D7BF27F72D6123CAB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D91B3460D3B2EA4A8963B0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNSLogin/Pods-SNSLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4B9B90F495C7324B121F779 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DB7A90D1E37451500546900 /* Sources */ = {
@@ -394,6 +517,7 @@
 		};
 		6DB7A9341E37451500546900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF12A28ADFD5297C3D27019 /* Pods-SNSLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
@@ -411,6 +535,7 @@
 		};
 		6DB7A9351E37451500546900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B37ABFAB627DBD68621E7720 /* Pods-SNSLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
@@ -428,6 +553,7 @@
 		};
 		6DB7A9371E37451500546900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51D12FCDD8B1304AB0FA838 /* Pods-SNSLoginTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SNSLoginTests/Info.plist;
@@ -440,6 +566,7 @@
 		};
 		6DB7A9381E37451500546900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D62F2D94299937722622DAE /* Pods-SNSLoginTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SNSLoginTests/Info.plist;

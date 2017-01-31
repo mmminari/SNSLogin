@@ -55,8 +55,62 @@
                     <view key="view" contentMode="scaleToFill" id="dDF-ff-dCD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yWT-iS-F9q">
+                                <rect key="frame" x="37.5" y="120" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="c1E-Rb-4e4"/>
+                                    <constraint firstAttribute="height" constant="300" id="nV5-aU-tpA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPb-AI-8pP">
+                                <rect key="frame" x="187" y="450" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-3l-xaR">
+                                <rect key="frame" x="157.5" y="560" width="59" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="LogOut!"/>
+                                <connections>
+                                    <action selector="touchedLogOutButton:" destination="sYx-po-eyJ" eventType="touchUpInside" id="juF-jz-6Hy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-4T-169">
+                                <rect key="frame" x="166" y="475" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-7N-dBr">
+                                <rect key="frame" x="187" y="60" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HPb-AI-8pP" firstAttribute="centerX" secondItem="dDF-ff-dCD" secondAttribute="centerX" id="5BR-xZ-ThI"/>
+                            <constraint firstItem="ldQ-3l-xaR" firstAttribute="top" secondItem="yWT-iS-F9q" secondAttribute="bottom" constant="140" id="9C1-0Y-aW9"/>
+                            <constraint firstItem="HPb-AI-8pP" firstAttribute="top" secondItem="yWT-iS-F9q" secondAttribute="bottom" constant="30" id="AMt-q8-qS7"/>
+                            <constraint firstItem="yWT-iS-F9q" firstAttribute="centerX" secondItem="dDF-ff-dCD" secondAttribute="centerX" id="K0z-Bm-ech"/>
+                            <constraint firstItem="aRo-7N-dBr" firstAttribute="centerX" secondItem="dDF-ff-dCD" secondAttribute="centerX" id="N4w-uh-oS1"/>
+                            <constraint firstItem="i3z-4T-169" firstAttribute="top" secondItem="yWT-iS-F9q" secondAttribute="bottom" constant="60" id="O0C-D5-8fY"/>
+                            <constraint firstItem="yWT-iS-F9q" firstAttribute="top" secondItem="etw-9c-dVw" secondAttribute="bottom" constant="100" id="dIK-jY-bDt"/>
+                            <constraint firstItem="aRo-7N-dBr" firstAttribute="top" secondItem="i3z-4T-169" secondAttribute="bottom" constant="-420" id="gsX-Ro-aZY"/>
+                            <constraint firstItem="ldQ-3l-xaR" firstAttribute="centerX" secondItem="dDF-ff-dCD" secondAttribute="centerX" id="oTm-PT-u7J"/>
+                            <constraint firstItem="i3z-4T-169" firstAttribute="centerX" secondItem="dDF-ff-dCD" secondAttribute="centerX" id="zuc-FO-jl1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivProfile" destination="yWT-iS-F9q" id="1bw-kL-K9M"/>
+                        <outlet property="lbEmail" destination="i3z-4T-169" id="Wmg-uS-14Y"/>
+                        <outlet property="lbId" destination="aRo-7N-dBr" id="g4k-T5-vR7"/>
+                        <outlet property="lbUserName" destination="HPb-AI-8pP" id="alx-kk-CwN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OyE-El-5pL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

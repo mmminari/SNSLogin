@@ -12,10 +12,13 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface ViewController () <FBSDKLoginButtonDelegate>
+
+@interface ViewController ()// <FBSDKLoginButtonDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *btnLogin;
-@property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+//@property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+
+@property (strong, nonatomic) NSString *userID;
 
 
 @end
@@ -28,11 +31,11 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    self.loginButton = [[FBSDKLoginButton alloc] init];
-    
-    self.loginButton.delegate = self;
-    
-    self.loginButton.readPermissions = @[@"public_profile", @"user_friends"];
+//    self.loginButton = [[FBSDKLoginButton alloc] init];
+//    
+//    self.loginButton.delegate = self;
+//    
+//    self.loginButton.readPermissions = @[@"public_profile",@"email" ,@"user_friends"];
 
 }
 
@@ -40,7 +43,37 @@
 
 - (IBAction)touchedLoginButton:(UIButton *)sender
 {
-    [self.loginButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc]init];
+    
+    login.loginBehavior = FBSDKLoginBehaviorWeb;
+    
+    NSArray *permissions = @[@"public_profile",@"email" ,@"user_friends", @"user_birthday"];
+    
+    [login logInWithReadPermissions:permissions fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        
+        NSLog(@"login result : %@",result);
+        
+        NSLog(@"login error : %@", error);
+        
+        NSString *userId = result.token.userID;
+        
+        self.userID = userId;
+        
+        if([[FBSDKAccessToken currentAccessToken] hasGranted:@"email"])
+        {
+            NSLog(@"email granted");
+        }
+        
+        if([result.declinedPermissions containsObject:@"email"])
+        {
+            NSLog(@"email permission declined");
+        }
+        
+        
+        
+        [self moveToDetailVC];
+        
+    }];
 }
 
 #pragma mark - FBSDKLoginButtonDelegate
@@ -62,19 +95,30 @@
     {
         NSLog(@"result ; %@", result.grantedPermissions);
         
+        NSString *userId = result.token.userID;
+        
+        self.userID = userId;
+        
         [self moveToDetailVC];
     }
+    
 }
 
 - (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
 {
-    
-    
+    NSLog(@"logOut!");
 }
 
 - (void)moveToDetailVC
 {
     UserProfileViewController *userProfileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"stid-UserProfileVC"];
+    
+    userProfileVC.userId = self.userID;
+//    userProfileVC.request = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me/taggable_friends?limit=10"
+//                                                             parameters:@{ @"fields" : @"id,name,picture.width(100).height(100)"
+//                                                                           };
+    userProfileVC.profileRequest = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me/public_profile" parameters:nil];
+                                                                                                                       
     
     [self.navigationController pushViewController:userProfileVC animated:YES];
 }
