@@ -17,53 +17,5 @@
             endingLineNumber = "14">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SNSLogin/UserProfileViewController.m"
-            timestampString = "507534212.208441"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "-touchedLogOutButton:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UserProfileViewController touchedLogOutButton:]"
-                  moduleName = "SNSLogin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmminari/Documents/mina/SNSLogin/SNSLogin/SNSLogin/UserProfileViewController.m"
-                  timestampString = "507105767.736835"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UserProfileViewController touchedLogOutButton:]"
-                  moduleName = "SNSLogin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mmminari/Documents/mina/SNSLogin/SNSLogin/SNSLogin/UserProfileViewController.m"
-                  timestampString = "507105767.738"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
-                  offsetFromSymbolStart = "160">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

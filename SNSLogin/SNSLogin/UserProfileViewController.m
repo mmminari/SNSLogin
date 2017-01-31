@@ -20,7 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbId;
 
 @property (strong, nonatomic) NSArray *resultList;
-@property (strong, nonatomic) FBSDKProfile *profile;
 
 @end
 
@@ -36,52 +35,31 @@
 {
     [super viewWillAppear:animated];
     
-    //[self fetchData];
-    
     [self getUserProfile];
     
-}
-
-- (void)fetchData
-{
-    [self.request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-        
-        if(error)
-        {
-            NSLog(@"error:%@", error.description);
-        }
-        else
-        {
-            NSDictionary *resultData = (NSDictionary *)result;
-            
-            self.resultList = [resultData objectForKey:@"data"];
-            
-            NSLog(@"self.resultLisg : %@", self.resultList);
-
-        }
-
-    }];
+    [self getAdditionalUserInfo];
+    
 }
 
 - (void)getUserProfile
 {
     [FBSDKProfile loadCurrentProfileWithCompletion:^(FBSDKProfile *profile, NSError *error) {
         
-        self.profile = profile;
-        
-        NSURL *url = [self.profile imageURLForPictureMode:FBSDKProfilePictureModeSquare size:CGSizeMake(300, 300)];
+        NSURL *url = [profile imageURLForPictureMode:FBSDKProfilePictureModeSquare size:CGSizeMake(300, 300)];
         
         [self setImageView:self.ivProfile urlString:[NSString stringWithFormat:@"%@",url] placeholderImage:nil animation:YES];
         
-        NSString *userName = self.profile.name;
+        NSString *userName = profile.name;
         
         self.lbUserName.text = userName;
         
         [self.view layoutIfNeeded];
         
-        
     }];
-    
+}
+
+- (void)getAdditionalUserInfo
+{
     NSString *path = [NSString stringWithFormat:@"/%@", self.userId];
     
     NSLog(@"path : %@", path);
@@ -98,12 +76,10 @@
                                           id result,
                                           NSError *error) {
         
-        NSLog(@"UserProfile request result : %@", result);
-        
-        
         NSDictionary *resultData = (NSDictionary *)result;
         
-        
+        NSLog(@"UserProfile request result : %@", resultData);
+
         NSLog(@"error : %@", error.description);
         
         self.lbId.text = [resultData objectForKey:@"id"];
@@ -114,40 +90,8 @@
 
 - (IBAction)touchedLogOutButton:(UIButton *)sender
 {
-    
-//    [self deleteCache];
-//    
-//    [FBSDKAccessToken setCurrentAccessToken:nil];
-//    
-//    
-//    
-//    [FBSDKLoginManager renewSystemCredentials:^(ACAccountCredentialRenewResult result, NSError *error) {
-//        
-//        NSLog(@"result ; %zd", result);
-//        
-//        NSLog(@"error : %@", error.description);
-//        
-//    }];
-//    
-//
-//    
-//    NSHTTPCookieStorage *cookies = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-//    
-//    NSLog(@"cookies : %@", cookies);
-//    
-//    for(NSHTTPCookie *cookie in [cookies cookies]) {
-//        
-//        NSLog(@"cookie : %@", cookie.domain);
-//        
-//        
-//        if([[cookie domain] isEqualToString:@"facebook"]) {
-//            
-//            NSLog(@"domain : %@", cookie.domain);
-//            
-//            [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
-//        }
-//    }
-//    
+
+    // 기존에 요청했던 권한들 제거
     NSString *path = @"me/permissions/";
     
     FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
@@ -159,25 +103,20 @@
                                           id result,
                                           NSError *error) {
         
-        if ([FBSDKAccessToken currentAccessToken]) {
+        // 제거 후 토큰값과 프로필 정보 제거
+        if ([FBSDKAccessToken currentAccessToken])
+        {
             [FBSDKAccessToken setCurrentAccessToken:nil];
             [FBSDKProfile setCurrentProfile:nil];
         }
-        
 
         NSLog(@"result : %@", result);
         
-        NSLog(@"error : %@", error.description);
-        
+        NSLog(@"error : %@", error);
         
         [self.navigationController popViewControllerAnimated:YES];
-
-        
     }];
-
-    
 }
-
 
 #pragma mark - Private Method
 
@@ -198,8 +137,6 @@
      }];
 }
 
-
-
 - (CATransition *)fadeOutAnimationForChangeImage
 {
     CATransition *transition = [CATransition animation];
@@ -209,22 +146,5 @@
     
     return transition;
 }
-
-- (void)deleteCache
-{
-    NSArray *secItemClasses = @[(__bridge id)kSecClassGenericPassword,
-                                (__bridge id)kSecClassInternetPassword,
-                                (__bridge id)kSecClassCertificate,
-                                (__bridge id)kSecClassKey,
-                                (__bridge id)kSecClassIdentity];
-    for (id secItemClass in secItemClasses) {
-        NSDictionary *spec = @{(__bridge id)kSecClass: secItemClass};
-        SecItemDelete((__bridge CFDictionaryRef)spec);
-    }
-    
-    NSLog(@"delete done");
-}
-
-
 
 @end

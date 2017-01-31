@@ -31,12 +31,6 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-//    self.loginButton = [[FBSDKLoginButton alloc] init];
-//    
-//    self.loginButton.delegate = self;
-//    
-//    self.loginButton.readPermissions = @[@"public_profile",@"email" ,@"user_friends"];
-
 }
 
 #pragma mark - User Action
@@ -59,6 +53,8 @@
         
         self.userID = userId;
         
+        
+        // email에 대한 권한을 받았는지 체크
         if([[FBSDKAccessToken currentAccessToken] hasGranted:@"email"])
         {
             NSLog(@"email granted");
@@ -69,13 +65,24 @@
             NSLog(@"email permission declined");
         }
         
-        
-        
         [self moveToDetailVC];
         
     }];
 }
 
+#pragma mark - Private Method
+
+- (void)moveToDetailVC
+{
+    UserProfileViewController *userProfileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"stid-UserProfileVC"];
+    
+    userProfileVC.userId = self.userID;
+    
+    [self.navigationController pushViewController:userProfileVC animated:YES];
+}
+
+// 기존 Facebook에서 제공하는 로그인 버튼을 이용했을 때 사용하는 부분
+// 현재는 사용 X
 #pragma mark - FBSDKLoginButtonDelegate
 
 - (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error
@@ -109,19 +116,6 @@
     NSLog(@"logOut!");
 }
 
-- (void)moveToDetailVC
-{
-    UserProfileViewController *userProfileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"stid-UserProfileVC"];
-    
-    userProfileVC.userId = self.userID;
-//    userProfileVC.request = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me/taggable_friends?limit=10"
-//                                                             parameters:@{ @"fields" : @"id,name,picture.width(100).height(100)"
-//                                                                           };
-    userProfileVC.profileRequest = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me/public_profile" parameters:nil];
-                                                                                                                       
-    
-    [self.navigationController pushViewController:userProfileVC animated:YES];
-}
 
 
 

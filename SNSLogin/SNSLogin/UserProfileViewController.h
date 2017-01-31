@@ -12,10 +12,6 @@
 
 @interface UserProfileViewController : UIViewController
 
-@property (nonatomic, strong) FBSDKGraphRequest *request;
-@property (nonatomic, strong) FBSDKGraphRequest *profileRequest;
 @property (nonatomic, strong) NSString *userId;
-
-
 
 @end
